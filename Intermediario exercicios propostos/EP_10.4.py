@@ -13,7 +13,7 @@ def coleta_dados():
     celular = input('Digíte o número de celular: ')
     email = input('Digíte o email: ')
     anv = input('Digíte a data de aniversário: ')
-    contatos = {nome: {'celular': celular, 'email': email, 'aniversário':anv}}
+    contatos[nome] = {'celular': celular, 'email': email, 'aniversário':anv}
     return (contatos)
 
 while True:
