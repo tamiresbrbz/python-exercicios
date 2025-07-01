@@ -12,7 +12,13 @@ for linha in open('dados_11.2.txt', 'r'):
     x = linha.rstrip().split(';')
     cod = int(x[0])
     qtde = int(x[1])
+
     if cod in vendas:
         vendas[cod] = (vendas[cod] + qtde)
     else:
         vendas[cod] = (qtde)
+
+print('Total de Vendas por Produto:')
+for cod, qtde in vendas.items():
+    print(f'Código: {cod}, Quantidade Vendida: {qtde}')
+
