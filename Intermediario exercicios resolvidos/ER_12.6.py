@@ -1,7 +1,7 @@
 # Exercício Resolvido 12.6 - Enuncioado contido no Ebook
 
 def CalculaMedia(pNotas):
-    '''Rece o string pNotas, faz a separação dos valores, calcula e retorna a média'''
+    '''O string pNotas, faz a separação dos valores, calcula e retorna a média'''
     pNotas = pNotas.split(' ')
     for i in range(len(pNotas)):
         pNotas[i] = float(pNotas[i])
